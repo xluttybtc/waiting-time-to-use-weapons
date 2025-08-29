@@ -49,7 +49,7 @@ Citizen.CreateThread(function()
 
         if weaponName then
             -- Enviar la petición al servidor para verificar el playtime
-            ESX.TriggerServerCallback('spainrol_troll:canUseWeapon', function(canUse)
+            ESX.TriggerServerCallback('time_weapon:canUseWeapon', function(canUse)
                 if not canUse then
                     -- Usar ox_inventory:disarm para desarmar al jugador
                     TriggerEvent('ox_inventory:disarm', false)
